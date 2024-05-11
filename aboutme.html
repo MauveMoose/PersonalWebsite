@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head><title> Siddhant's Portfolio </title>
+<link href="maincss.css" type="text/css" rel=stylesheet>
+<script type="text/javascript">
+function search(){
+	var n = document.getElementById("s").value;
+	var t = n.toLowerCase();
+	if(t=="dogs" || t=="dog" || t=="sleeping dogs" || t=="sleeping dog"){
+		window.open("Dogs.html");}
+	else if(t=="floral" || t=="flower" || t=="flowers" || t=="floral close-ups"|| t=="floral closeups"||t=="floral close ups" || t=="floral close-up"|| t=="floral closeup"||t=="floral close up"){
+		window.open("Flowers.html");}
+	else if(t=="puppies" || t=="puppy" || t=="pup" || t=="pups"){
+		window.open("Puppies.html");}
+	else if(t=="sky" || t=="skies" || t=="skies and scenery" || t=="scenery" || t=="sceneries" || t=="sky scenery" || t=="skies scenery"){
+		window.open("Sky.html");}
+	else if(t=="video" || t=="videos"){
+		window.open("Videos.html");}
+	else if(t=="connect" || t=="connect with me" || t=="connect me" || t=="contact" || t=="contact me"){
+		window.open("ContactMe.html");}
+	else if(t=="me" || t=="about me" || t=="aboutme"){
+		window.open("aboutme.html");}
+	else{
+		alert("Invalid search term! Try again");}
+}
+</script>
+</head>
+
+<body>
+
+<header>
+<h1 class="mainheader"> Siddhant's Portfolio </h1>
+<h2 class="subheader"> A collection of my favorite pics </h2>
+<table align=right>
+<form>
+<tr>
+<td><button onclick="search()"> Search </button></td>
+<td><input type="text" id="s" placeholder="Enter search term here.." width=300></td>
+</tr>
+</form>
+</table>
+</header>
+
+<nav>
+&nbsp;<a href="aboutme.html">About Me</a> |&nbsp; 
+&nbsp;<a href="Dogs.html">Sleeping Dogs</a> |&nbsp; 
+&nbsp;<a href="Flowers.html">Floral close-ups</a> |&nbsp; 
+&nbsp;<a href="Puppies.html">Puppies</a> |&nbsp; 
+&nbsp;<a href="Sky.html">Skies and Scenery</a> |&nbsp; 
+&nbsp;<a href="Videos.html">Videos</a> |&nbsp; 
+&nbsp;<a href="ContactMe.html">Connect with Me</a> &nbsp;
+</nav>
+
+<section style="background-image:url('qmark.png'); background-size:20%; background-repeat:space">
+<table>
+<tr>
+<th colspan=2><h1 class="tableheader">Who am I? </h1></th>
+</tr>
+<tr>
+<td align=center rowspan=5 width=50%><img src="Me1.jpg" width=100% height=100%></td>
+<td>
+<ul>
+   <li> Studied at S.M. Shetty International School, Powai </li>
+   <li> Currently a student at SK Somaiya College, Vidyavihar </li>
+</ul>
+</td>
+</tr>
+<tr>
+<th> <h1 class="tableheader"> My skills</h1> </th>
+</tr>
+<tr>
+<td>
+<ul>
+   <li> Proficient in C++, Python, JavaScript, HTML, CSS </li>
+   <li> Fluent in English, Hindi and French </li>
+   <li> Amateur photographer since 2023 </li>
+</ul>
+</td>
+</tr>
+<tr>
+<th> <h1 class="tableheader"> Certifications and Achievements </h1> </th>
+</tr>
+<tr>
+<td>
+<ul>
+   <li> Press Head at Model United Nations (2016-2017) </li>
+   <li> Received Rotary Award for Academic Excellence (2017) </li>
+   <li> Received Cambridge ICE Award Distinction (2017) </li>
+   <li> Certificate in Introduction to Android App Development (2023) </li>
+</ul>
+</td>
+</tr>
+</table>
+</section>
+
+<footer>
+&copy; 2023-2027 Siddhant Shirke 31011123060 FY Bsc. CS
+</footer>
+
+</body>
+</html>

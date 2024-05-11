@@ -1,0 +1,10 @@
+h1.tableheader{font-size:28px; font-family:"Verdana"; text-align:center; color:#bed9e2}
+h1.mainheader{text-align:center; margin:0px; font-size:50px}
+h2.subheader{text-align:center; margin:0px; font-family:"Brush Script MT"; color:#5a5b6b; font-size:28px;}  
+body{background-image:url("bodybackground.jpg"); margin:0px;}
+table{font-family:"Tahoma"; font-size:20px; }
+nav{background-color:#343439; color:#e3e4f6; text-align:center; font-family:"Tahoma"; padding:10px;}
+section{background-color:#c89259; margin-left:20px; margin-right:20px; padding:0px; color:#10101b; font-family;"Trebuchet MS";}
+a{color:#e3e4f6}
+header{background-image:url("background0.jpg"); background-size:cover; background-repeat:no-repeat; color:#14162a; margin:0px; padding:5px;}
+footer{background-color:#343439; margin:0px; padding:20px; color:#e3e4f6; text-align:center; font-family:"Tahoma"}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head><title> Siddhant's Portfolio </title>
+<link href="maincss.css" type="text/css" rel=stylesheet>
+<style>
+textarea::placeholder{text-align:right;}
+</style>
+
+<script type="text/javascript">
+function search(){
+	var n = document.getElementById("s").value;
+	var t = n.toLowerCase();
+	if(t=="dogs" || t=="dog" || t=="sleeping dogs" || t=="sleeping dog"){
+		window.open("Dogs.html");}
+	else if(t=="floral" || t=="flower" || t=="flowers" || t=="floral close-ups"|| t=="floral closeups"||t=="floral close ups" || t=="floral close-up"|| t=="floral closeup"||t=="floral close up"){
+		window.open("Flowers.html");}
+	else if(t=="puppies" || t=="puppy" || t=="pup" || t=="pups"){
+		window.open("Puppies.html");}
+	else if(t=="sky" || t=="skies" || t=="skies and scenery" || t=="scenery" || t=="sceneries" || t=="sky scenery" || t=="skies scenery"){
+		window.open("Sky.html");}
+	else if(t=="video" || t=="videos"){
+		window.open("Videos.html");}
+	else if(t=="connect" || t=="connect with me" || t=="connect me" || t=="contact" || t=="contact me"){
+		window.open("ContactMe.html");}
+	else if(t=="me" || t=="about me" || t=="aboutme"){
+		window.open("aboutme.html");}
+	else{
+		alert("Invalid search term! Try again");}
+}
+
+</script>
+</head>
+
+<body>
+
+<header>
+<h1 class="mainheader"> Siddhant's Portfolio </h1>
+<h2 class="subheader"> A collection of my favorite pics </h2>
+<table align=right>
+<form>
+<tr>
+<td><button onclick="search()"> Search </button></td>
+<td><input type="text" id="s" placeholder="Enter search term here.." width=300></td>
+</tr>
+</form>
+</table>
+</header>
+
+<nav>
+&nbsp;<a href="aboutme.html">About Me</a> |&nbsp; 
+&nbsp;<a href="Dogs.html">Sleeping Dogs</a> |&nbsp; 
+&nbsp;<a href="Flowers.html">Floral close-ups</a> |&nbsp; 
+&nbsp;<a href="Puppies.html">Puppies</a> |&nbsp; 
+&nbsp;<a href="Sky.html">Skies and Scenery</a> |&nbsp; 
+&nbsp;<a href="Videos.html">Videos</a> |&nbsp; 
+&nbsp;<a href="ContactMe.html">Connect with Me</a> &nbsp;
+</nav>
+
+<section style="background-image:url('qmark.png'); background-size:20%; background-repeat:space; padding:10px">
+
+<form method="post" action="Thankyou.php" name="f1">
+<table cellspacing=20px align="center">
+<tr>
+<th align="center" colspan=2> <h1 class="tableheader" style="font-family:'Arial Rounded MT Bold'; font-size:40px"> Contact Me! </th>
+</tr>
+<tr>
+<td> Full Name: </td>
+<td> <input type="text" placeholder="John Smith..." size=30px name="name" id="z"> </td>
+</tr>
+<tr> 
+<td> Email Address: </td>
+<td> <input type="email" placeholder="sampleemail@email.com..." size=30px name="email"> </td>
+</tr>
+<tr>
+<td> Mobile Number: </td>
+<td> <input type="tel" placeholder="+91 XXXXXXXXXX" size=30px name="mnumber"> </td>
+</tr>
+<tr>
+<td> Date of Message: </td>
+<td> <input type="date" name="date"> </td>
+</tr>
+<td> Purpose of Contact: </td>
+<td> <input type="checkbox" name="comm"> Commission Me/ Purchase a Photo <br>
+     <input type="checkbox" name="report"> Report a Problem <br>
+     <input type="checkbox" name="collab"> Collaborate on a Project <br>
+     <input type="checkbox" name="chat"> Just Chat! </td>
+</tr>
+<tr>
+<td> Your Message: </td>
+<td> <textarea placeholder="Maximum length=250" rows=15 cols=60 maxlength=250 name="feedback"></textarea> </td>
+</tr>
+<tr>
+<td align="center"> <input type="submit" value="Send!"> </td>
+<td align="center"> <input type="reset" value="Clear"> </td>
+</tr>
+</table>
+</form>
+</section>
+
+<footer>
+&copy; 2023-2027 Siddhant Shirke 31011123060 FY Bsc. CS
+</footer>
+
+</body>
+</html>
